@@ -1,0 +1,67 @@
+site_name: Cloud
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: blue
+    accent: light blue
+  font:
+    text: Roboto
+  language: en
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  features: 
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - header.autohide
+    - announce.dismiss
+    - navigation.footer
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+plugins:
+  - search
+  - social
+  - tags
+  - optimize
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/christophelimpalair/
+    - icon: fontawesome/brands/discord
+      link: https://cybr.com/discord
+copyright: Copyright &copy; 2024 Cybr, Inc.
+markdown_extensions:
+  - pymdownx.betterem
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
