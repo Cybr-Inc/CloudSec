@@ -8,7 +8,7 @@ Generate policies based on access activity by having IAM Access Analyzer review 
 
 !!! info "More info"
 
-    [https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_generate-policy.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_generate-policy.html)
+    [ :octicons-link-external-16: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_generate-policy.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_generate-policy.html)
 
 !!! tip "Tips"
 
@@ -18,7 +18,7 @@ Generate policies based on access activity by having IAM Access Analyzer review 
 ## Access Analyzer Cheat Sheet
 <figure markdown>
   ![Image title](https://cybr.com/wp-content/uploads/2024/02/access-analyzer.jpg){ width="500" loading=lazy }
-    <figcaption>[💾 Hi-res download >](https://cybr.com/wp-content/uploads/2024/02/access-analyzer.jpg)</figcaption>
+    <figcaption>[ :octicons-link-external-16: Hi-res download](https://cybr.com/wp-content/uploads/2024/02/access-analyzer.jpg)</figcaption>
 </figure>
 
 ## Check-access-not-granted
@@ -64,7 +64,7 @@ For example, you can run the command:
 
     _Requires CLI 2.13.39 or later_
 
-    More info: [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/accessanalyzer/check-access-not-granted.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/accessanalyzer/check-access-not-granted.html)
+    More info: [ :octicons-link-external-16: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/accessanalyzer/check-access-not-granted.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/accessanalyzer/check-access-not-granted.html)
 
 ## Check-no-new-access
 This feature and command of IAM Access Analyzer enables us to check and see if new permissions are added to a policy before deploying to AWS. Think of it as a diff checker.
@@ -104,4 +104,4 @@ aws accessanalyzer check-no-new-access \
     
     _Requires CLI 2.13.39 or later_
 
-    More info: [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/accessanalyzer/check-no-new-access.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/accessanalyzer/check-no-new-access.html)
+    More info: [ :octicons-link-external-16: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/accessanalyzer/check-no-new-access.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/accessanalyzer/check-no-new-access.html)

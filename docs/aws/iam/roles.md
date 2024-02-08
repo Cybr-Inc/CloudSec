@@ -13,7 +13,7 @@ Coming Soon
 ### Better approach
 
 ### Best approach
-For the best approach, check out [aws-vault](/aws/iam/open-source-tools/) in our list of open source tools.
+For the best approach, check out [ :octicons-link-external-16: aws-vault](/aws/iam/open-source-tools/) in our list of open source tools.
 
 ## Understanding trust relationship policy documents (and how they're different from IAM policies)
 
@@ -21,4 +21,4 @@ For the best approach, check out [aws-vault](/aws/iam/open-source-tools/) in our
 
 ## AWS service-linked roles
 
-[Helpful answer from StackOverflow](https://stackoverflow.com/questions/65970798/aws-service-role-vs-service-link-role)
+[ :octicons-link-external-16: Helpful answer from StackOverflow](https://stackoverflow.com/questions/65970798/aws-service-role-vs-service-link-role)
