@@ -4,7 +4,7 @@ My AWS access keys were exposed and are being exploited by a threat actor. What 
 ## Cheat Sheet
 <figure markdown>
   ![Image title](https://cybr.com/wp-content/uploads/2024/01/ir-playbook-iam_credentials_exposure-scaled.jpeg){ width="500" loading=lazy }
-    <figcaption>[💾 Hi-res download >](https://cybr.com/courses/iam-privilege-escalation-labs/lessons/lab-introduction-to-secrets-manager-enumeration/)</figcaption>
+    <figcaption>[:octicons-link-external-16: Hi-res download](https://cybr.com/courses/iam-privilege-escalation-labs/lessons/lab-introduction-to-secrets-manager-enumeration/)</figcaption>
 </figure>
 
 
@@ -61,7 +61,7 @@ These are all potential topics you can expect to see on your AWS Certified Secur
 
 Sources and more info:
 
-1. [🔗 IAM credential exposure playbook](https://github.com/aws-samples/aws-incident-response-playbooks-workshop/blob/main/playbooks/credential_exposure/IAM_credential_exposure.md)
-2. [🔗 AWS Security Incident Response Guide](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/containment.html)
-3. [🔗 NIST 800-61](https://csrc.nist.gov/pubs/sp/800/61/r2/final)
-4. AWS Incident Response with CloudTrail and Athena Course (Coming Soon)
+1. [ :octicons-link-external-16: IAM credential exposure playbook](https://github.com/aws-samples/aws-incident-response-playbooks-workshop/blob/main/playbooks/credential_exposure/IAM_credential_exposure.md)
+2. [ :octicons-link-external-16: AWS Security Incident Response Guide](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/containment.html)
+3. [ :octicons-link-external-16: NIST 800-61](https://csrc.nist.gov/pubs/sp/800/61/r2/final)
+4. [AWS Incident Response with CloudTrail and Athena Course](https://cybr.com/courses/beginners-guide-to-aws-cloudtrail-for-security/) ^[Paid][Sponsored]^

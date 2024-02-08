@@ -12,7 +12,7 @@ We are looking to mention and promote open source tooling. If you have a commerc
 
     If you'd like to contribute, here's a quick guide and what we primarily need help with
 
-    [:octicons-arrow-right-24: How to contribute](#)
+    [:octicons-arrow-right-24: How to contribute](/contributing)
 
 -   :material-scale-balance:{ .lg .middle } __License & ToS__
 
@@ -50,7 +50,7 @@ We are looking for contributors.
 
     If you'd like to contribute, here's a quick guide and what we primarily need help with
 
-    [:octicons-arrow-right-24: How to contribute](#)
+    [:octicons-arrow-right-24: How to contribute](/contributing)
 
 </div>
 
@@ -66,7 +66,7 @@ We are looking for contributors.
 
     If you'd like to contribute, here's a quick guide and what we primarily need help with
 
-    [:octicons-arrow-right-24: How to contribute](#)
+    [:octicons-arrow-right-24: How to contribute](/contributing)
 
 </div>
 

@@ -1,23 +1,17 @@
 ## About IAM
 UPDATE INFO
 
-## Learn how to enumerate IAM Hands-On
-<figure markdown>
-  ![Image title](https://cybr.com/wp-content/uploads/2024/01/IAM-Enumerate.jpeg){ width="300" loading=lazy }
-    <figcaption>[🧪 Intro to AWS IAM Enumeration >](https://cybr.com/courses/iam-privilege-escalation-labs/lessons/lab-introduction-to-aws-iam-enumeration/)</figcaption>
-</figure>
-
 ## AWS IAM Enumeration CLI commands
 Retrieves general account information about including IAM users, groups, roles, and policies, and their relationships to one another. 
 
-These are meant to be non-destructive enumeration commands. They only retrieve information, they do not modify resources (unless otherwise specified). [Official AWS Documentation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/index.html)
+These are meant to be non-destructive enumeration commands. They only retrieve information, they do not modify resources (unless otherwise specified). [ :octicons-link-external-16: Official AWS Documentation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/index.html)
 
 Note: most of these commands have many more options than are shown, but they are optional and left out because they're not that useful most of the time and only required for special use cases. Refer to the docs above for more details.
 
 Legend:
 
 - Each line that starts with `aws` is the command
-- The word immediately following `aws` denotes the service (ie: `aws sts` is calling the [STS](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/index.html) service, `aws iam` is calling the [IAM](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/index.html) service)
+- The word immediately following `aws` denotes the service (ie: `aws sts` is calling the [ :octicons-link-external-16: STS](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/index.html) service, `aws iam` is calling the [ :octicons-link-external-16: IAM](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/index.html) service)
 
 ## General commands
 
@@ -40,7 +34,7 @@ The "whoami" in AWS.
 
 Returns details about the IAM user or role whose credentials are used to call the operation. While not an IAM command (it's an STS command), this is often the first command that gets used for IAM enumeration which is why it's included here. 
 
-No policy can deny issuing this command since it gives the same information when access is denied. [More on that here](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/get-caller-identity.html).
+No policy can deny issuing this command since it gives the same information when access is denied. [ :octicons-link-external-16: More on that here](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/get-caller-identity.html).
 
 ### Get-access-key-info
 `#!cli aws sts get-access-key-info --access-key-id <value>`
@@ -202,3 +196,9 @@ Get list of all MFA devices for a specific user. If no user is provided, AWS aut
 Get list of all MFA devices in the AWS account
 
 Can use optional `--assignment-status` to filter by Assigned, Unassigned, or Any (the default)
+
+## Learn how to enumerate IAM Hands-On
+<figure markdown>
+  ![Image title](https://cybr.com/wp-content/uploads/2024/01/IAM-Enumerate.jpeg){ width="300" loading=lazy }
+    <figcaption>[:octicons-link-external-16: 🧪 Intro to AWS IAM Enumeration >](https://cybr.com/courses/iam-privilege-escalation-labs/lessons/lab-introduction-to-aws-iam-enumeration/)</figcaption>
+</figure>

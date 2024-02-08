@@ -21,4 +21,4 @@ test
 ### How to detect
 
 ## Additional Resources
-You can learn about most of these PrivEscs from our sponsor's course [IAM Privilege Escalation Labs](https://cybr.com/courses/iam-privilege-escalation-labs/). Some of the labs are free and others require a paid membership.
+- Learn about most of these PrivEscs hands-on from our sponsor's course: [ :octicons-link-external-16: IAM Privilege Escalation Labs](https://cybr.com/courses/iam-privilege-escalation-labs/)^[Paid][Sponsored]^ (Some of the labs are free and others require a paid membership)

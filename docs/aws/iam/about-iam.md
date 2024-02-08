@@ -131,10 +131,10 @@ AWS also offers pre-made policies that, you guessed it, are called AWS-managed p
 ### AWS-managed policies
 AWS-managed policies are still managed policies, but they are pre-created by AWS and available by default to every single AWS account.
 
-You can see the entire listed of AWS-managed policies [here](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/policy-list.html) and examples include:
+You can see the entire listed of AWS-managed policies [ :octicons-link-external-16: here](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/policy-list.html) and examples include:
 
-- [AdministratorAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess.html)
-- [AmazonS3ReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3ReadOnlyAccess.html)
+- [ :octicons-link-external-16: AdministratorAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess.html)
+- [ :octicons-link-external-16: AmazonS3ReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3ReadOnlyAccess.html)
 
 AWS-managed policies can provide a great starting point and will sometimes grant exactly the permissions you need...but oftentimes they should be copied and modified to [achieve least privilege](/aws/iam/least-privilege/).
 
