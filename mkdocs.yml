@@ -117,6 +117,7 @@ nav:
   - About:
     - 'About': 'about.md'
     - 'License': 'license.md'
+    - 'Contributing': 'contributing.md'
   - Sponsors: 'sponsors.md'
     
 repo_name: CloudSec
