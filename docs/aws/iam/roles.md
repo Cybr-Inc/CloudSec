@@ -20,4 +20,5 @@ For the best approach, check out [aws-vault](/aws/iam/open-source-tools/) in our
 ## AWS service roles
 
 ## AWS service-linked roles
-https://stackoverflow.com/questions/65970798/aws-service-role-vs-service-link-role
+
+[Helpful answer from StackOverflow](https://stackoverflow.com/questions/65970798/aws-service-role-vs-service-link-role)
