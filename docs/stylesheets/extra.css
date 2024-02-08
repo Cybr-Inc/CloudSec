@@ -1,0 +1,10 @@
+
+/* Logo size */
+.md-header__button.md-logo {
+    width: 100px;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    width: 100%;
+    height: 100%;
+}

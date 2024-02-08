@@ -1,0 +1,1 @@
+https://cybr.com/cloud-security/ditching-aws-access-keys/

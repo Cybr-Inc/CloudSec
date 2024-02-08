@@ -1,0 +1,3 @@
+This project was initially created by and is being maintained by [Christophe Limpalair](https://www.linkedin.com/in/christophelimpalair/) from [Cybr](https://cybr.com). However, it is meant to be open source and to receive contributions from anyone and everyone who is looking to share their knowledge or tools with the community as long as they are open source.
+
+If you are looking to promote paid products, please [contact us](https://cybr.com/contact) for sponsorship opportunities.

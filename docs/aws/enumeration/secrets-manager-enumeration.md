@@ -1,0 +1,54 @@
+## About Secrets Manager
+Secrets Manager is an AWS service that lets you encrypt and store secrets that you can then use for all kinds of purposes, including for your applications, APIs, Lambda functions, etc…You can use it to store login credentials, API keys, or really any secret value you need to use but don’t want to hardcode since you’re trying to follow security best practices.
+
+It encrypts data as you store it using [KMS](https://aws.amazon.com/kms/), then decrypts it when you retrieve it. It also supports automatically and periodically rotating your secrets without breaking your apps, and it enables you to control exactly who or what can access your secrets.
+
+All that to say: Secrets Manager is a juicy target for threat actors because if they are able to gain access, they will have access to important secrets stored in your account. 
+
+## Learn how to enumerate Secrets Manager Hands-On
+<figure markdown>
+  ![Image title](https://cybr.com/wp-content/uploads/2024/01/SecretsManager-Enumeration-Banner.jpeg){ width="300" loading=lazy }
+    <figcaption>[🧪 Intro to Secrets Manager Enumeration >](https://cybr.com/courses/iam-privilege-escalation-labs/lessons/lab-introduction-to-secrets-manager-enumeration/)</figcaption>
+</figure>
+
+## Secrets Manager Enumeration Lab Walkthrough
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zejh1NNoU3A?si=6PC0rCA_5kf7Zilf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## AWS Secrets Manager Enumeration CLI commands
+Retrieves general and specific Secrets Manager information including listing secrets, retrieving resource-policy permissions, and retrieving stored secrets .
+These are meant to be non-destructive enumeration commands. They only retrieve information. They do not modify resources.
+However, keep in mind these actions will still get logged and potentially trigger alerts if the AWS account has monitoring & logging enabled.
+[Official AWS Documentation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/index.html#cli-aws-secretsmanager)
+
+## List-secrets
+`#!bash aws secretsmanager list-secrets [--include-planned-deletion | --no-include-planned-deletion] `
+
+Retrieves a list of secrets stored in Secrets Manager in that AWS account
+Does not include secrets marked for deletion unless you use optional [--include-planned-deletion]
+To issue this command, you must have `secretsmanager:ListSecrets` access
+
+## List-secret-version-ids
+`#!bash aws secretsmanager list-secret-version-ids --secret-id <value>` 
+
+Lists the versions for a specific secret
+To issue this command, you must have `secretsmanager:ListSecretVersionIds` access
+
+## Get-resource-policy
+`#!bash aws secretsmanager get-resource-policy --secret-id <value> `
+
+Secrets in Secrets Manager can have resource-based permissions policies attached (this is optional but a recommended security practice). This command retrieves it for a particular secret.
+To issue this command, you must have `secretsmanager:GetResourcePolicies` access
+
+## Describe-secret
+`#!bash aws secretsmanager describe-secret --secret-id <value>` 
+
+Gets the details for a secret, but doesn't include the secret value
+It does provide the Arn, Name, Description, KmsKeyId, whether rotation is enabled, and more
+To issue this command, you must have `secretsmanager:DescribeSecret` access
+
+## Get-secret-value
+`#!bash aws secretsmanager get-secret-value --secret-id <value> [--version-id <value>] [--version-stage <value>] `
+
+This retrieves the secret value as either SecretString or SecretBinary
+If you don't specify the optional [--version-id], it will grab the current version
+To issue this command, you must have `secretsmanager:GetSecretValue` access

@@ -1,9 +1,9 @@
-site_name: Cloud
+site_name: CloudSec.Cybr
 theme:
   name: material
   palette:
     scheme: slate
-    primary: blue
+    primary: indigo
     accent: light blue
   font:
     text: Roboto
@@ -26,11 +26,13 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
+  icon:
+    annotation: material/plus-circle
+      
 plugins:
   - search
   - social
   - tags
-  - optimize
 extra:
   generator: false
   social:
@@ -40,6 +42,7 @@ extra:
       link: https://cybr.com/discord
 copyright: Copyright &copy; 2024 Cybr, Inc.
 markdown_extensions:
+  - md_in_html
   - pymdownx.betterem
   - pymdownx.details
   - pymdownx.emoji:
@@ -62,6 +65,54 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+      use_pygments: true
+      guess_lang: true
+      linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: 'index.md'
+  - 'AWS Security':
+    - 'AWS Security Services': 'aws/aws-native-security-services.md'
+    - 'IAM':
+      - 'About IAM': 'aws/iam/about-iam.md'
+      - 'Identity Center': 'aws/iam/identity-center.md'
+      - 'Roles': 'aws/iam/roles.md'
+      - 'Achieve Least Privilege': 'aws/iam/least-privilege.md'
+      - 'Getting rid of access keys': 'aws/iam/get-rid-of-access-keys.md'
+      - 'Open Source Tools': 'aws/iam/open-source-tools.md'
+    - 'Enumeration':
+      - 'IAM': 'aws/enumeration/iam-enumeration.md'
+      - 'Secrets Manager': 'aws/enumeration/secrets-manager-enumeration.md'
+      - 'S3 Enumeration': 'aws/enumeration/s3-enumeration.md'
+    - 'Privilege Escalation':
+      - 'IAM PrivEsc': 'aws/privilege-escalation/iam-privilege-escalation.md'
+    - 'Incident Response':
+      - 'Stolen Credentials Playbook': 'aws/incident-response/stolen-credentials-playbook.md'
+      - 'Cryptomining Playbook': 'aws/incident-response/cryptomining-playbook.md'
+      - 'Open Source Tools': 'aws/incident-response/open-source-tools.md'
+    - 'Monitoring & Logging':
+      - 'AWS-Native Services': 'aws/monitoring-and-logging/aws-native-services.md'
+      - 'Open Source Tools': 'aws/monitoring-and-logging/open-source-tools.md'
+    - 'Threat Detection':
+      - 'About Threat Detection': 'aws/threat-detection/threat-detection.md'
+      - 'Guard Duty': 'aws/threat-detection/guard-duty.md'
+    - 'Security Assessments':
+      - 'Open Source Tools': 'aws/security-assessments/open-source-tools.md'
+    - 'Certifications': 'aws/certifications/certified-security-specialty.md'
+    - 'Latest AWS Security News': 'aws/latest-news.md'
+    - 'Sources': 'aws/sources.md'
+  - 'Azure Security': azure/about-azure.md
+  - 'Google Cloud Security': google-cloud/about-google-cloud.md
+  - 'Career Paths': 'career-paths/cloudsec-career-paths.md'
+  - About:
+    - 'About': 'about.md'
+    - 'License': 'license.md'
+  - Sponsors: 'sponsors.md'
+    
+repo_name: CloudSec
+repo_url: https://github.com/christophelimpalair/CloudSec
