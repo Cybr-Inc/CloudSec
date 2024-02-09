@@ -8,8 +8,6 @@ theme:
   font:
     text: Roboto
   language: en
-  logo: assets/logo.png
-  favicon: assets/favicon.png
   features: 
     - navigation.instant
     - navigation.instant.prefetch
