@@ -2,7 +2,8 @@
 
 Public repository for all things cloud security. We welcome contributions for anything and everything related to cloud security: AWS/Azure/Google Cloud, and related topics such as cloud pentesting, secrets, IaC, etc... 
 
-We are looking to mention and promote open source tooling. If you have a commercial product you'd like to promote, please [contact us](https://cybr.com/contact)  for sponsorship opportunities.
+**We are looking to mention and promote open source tools, projects, and learning resources**. If you have a commercial product you'd like to promote, please [ :octicons-link-external-16: contact us](https://cybr.com/contact)  for sponsorship opportunities.
+
 
 <div class="grid cards" markdown>
 
@@ -79,17 +80,17 @@ We are looking for contributors.
 Thanks to our sponsors for making this project possible!
 
 <figure markdown>
-  ![Image title](/assets/logo.png){ width=400 loading=lazy }
-    <figcaption>[Cybr Training >](https://cybr.com)</figcaption>
+  ![Image title](/assets/sponsors/cybr_logo_white_hires.png){ width=400 loading=lazy }
+    <figcaption>[ :octicons-link-external-16: Cybr AWS Security Training](https://cybr.com)</figcaption>
 </figure>
 
 <figure markdown>
-  ![Image title](https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/80ddf428-7dce-4536-9642-8b9cb1e5c94b/icon-asd/w=640,quality=80){ width=300 loading=lazy }
-    <figcaption>[AWS Security Digest Newsletter >](https://awssecuritydigest.com/)</figcaption>
+  ![Image title](/assets/sponsors/aws-security-newsletter.jpg){ width=300 loading=lazy }
+    <figcaption>[ :octicons-link-external-16: AWS Security Digest Newsletter](https://awssecuritydigest.com/)</figcaption>
 </figure>
 
 <figure markdown>
-  ![Image title](https://unusd.cloud/images/logo.png){ width=300 loading=lazy }
-    <figcaption>[Cut your cloud costs >](https://unusd.cloud/)</figcaption>
+  ![Image title](/assets/sponsors/unusd-logo-full-social.png){ width=300 loading=lazy }
+    <figcaption>[ :octicons-link-external-16: Cut your cloud costs](https://unusd.cloud/)</figcaption>
 </figure>
 
