@@ -12,5 +12,5 @@ In-scope for the AWS Certified Security Specialty exam.
 
 ## Additional Resources
 
-- [ :octicons-link-external-16: Study with Christophe](https://study.cybr.com) ^[Free][Sponsored]^
-- [ :octicons-link-external-16: Certification prep course](https://cybr.com/courses/aws-certified-security-specialty-scs-c02-course/) ^[Free][Sponsored]^
+- [ :octicons-link-external-16: Study with Christophe](https://study.cybr.com) ^[Free]^ ^[Sponsored]^
+- [ :octicons-link-external-16: Certification prep course](https://cybr.com/courses/aws-certified-security-specialty-scs-c02-course/) ^[Free]^ ^[Sponsored]^
