@@ -88,13 +88,8 @@ nav:
       - 'Achieve Least Privilege': 'aws/iam/least-privilege.md'
       - 'Getting rid of access keys': 'aws/iam/get-rid-of-access-keys.md'
       - 'Open Source Tools': 'aws/iam/open-source-tools.md'
-    - 'Enumeration':
-      - 'IAM': 'aws/enumeration/iam-enumeration.md'
-      - 'Secrets Manager': 'aws/enumeration/secrets-manager-enumeration.md'
-      - 'S3 Enumeration': 'aws/enumeration/s3-enumeration.md'
-    - 'Privilege Escalation':
-      - 'IAM PrivEsc': 'aws/privilege-escalation/iam-privilege-escalation.md'
     - 'Incident Response':
+      - 'Real World Case Studies': 'aws/incident-response/real-world-case-studies.md'
       - 'Stolen Credentials Playbook': 'aws/incident-response/stolen-credentials-playbook.md'
       - 'Cryptomining Playbook': 'aws/incident-response/cryptomining-playbook.md'
       - 'Open Source Tools': 'aws/incident-response/open-source-tools.md'
@@ -104,8 +99,17 @@ nav:
     - 'Threat Detection':
       - 'About Threat Detection': 'aws/threat-detection/threat-detection.md'
       - 'Guard Duty': 'aws/threat-detection/guard-duty.md'
+      - 'Threat Databases': 'aws/threat-detection/threat-databases.md'
     - 'Security Assessments':
-      - 'Open Source Tools': 'aws/security-assessments/open-source-tools.md'
+      - 'Pentesting & Red Teaming': 
+        - 'Open Source Tools': 'aws/security-assessments/pentesting-red-teaming/open-source-tools.md'
+        - 'Enumeration':
+          - 'IAM': 'aws/security-assessments/pentesting-red-teaming/enumeration/iam-enumeration.md'
+          - 'Secrets Manager': 'aws/security-assessments/pentesting-red-teaming/enumeration/secrets-manager-enumeration.md'
+          - 'S3 Enumeration': 'aws/security-assessments/pentesting-red-teaming/enumeration/s3-enumeration.md'
+        - 'Privilege Escalation':
+          - 'IAM PrivEsc': 'aws/security-assessments/pentesting-red-teaming/privilege-escalation/iam-privilege-escalation.md'
+      - 'Audits and Compliance': 'aws/security-assessments/audit-and-compliance.md'
     - 'Certifications': 
       - 'Certified Security Specialty': 'aws/certifications/certified-security-specialty.md'
     - 'Latest AWS Security News': 'aws/latest-news.md'
