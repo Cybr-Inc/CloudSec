@@ -102,7 +102,7 @@ Regardless of whether you are creating/using IAM Users, Groups, and/or Roles, yo
 
 Policies in AWS are JSON documents that dictate what is allowed or denied.
 
-Policies can be very complex, which is part of what can lead to vulnerabilities (like [PrivEscs](http://127.0.0.1:8000/aws/privilege-escalation/iam-privilege-escalation/))
+Policies can be very complex, which is part of what can lead to vulnerabilities (like [PrivEscs](/aws/security-assessments/pentesting-red-teaming/privilege-escalation/iam-privilege-escalation/))
 
 ## Inline Policies
 Inline policies are created for a single IAM identity (whether it be a user, group, or role).
