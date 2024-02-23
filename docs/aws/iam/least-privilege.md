@@ -1,5 +1,31 @@
 # About least privilege
 
+The concept of least privilege is about providing only the permissions required to perform a task. That's much easier said than done, however, and the journey to getting there typically starts off by providing more permissions than necessary (while being reasonable), and then refining over time. This page contains tips, tricks, and steps to help with that.
+
+## Tips for getting to least-privilege permissions
+
+### Step 1: Create roles for users to assume to perform specific tasks
+
+[Roles](roles.md) have many benefits, including helping us achieve least privilege. For example, if you have access to a admin-level user, but your regular day-to-day tasks only require you to access EKS, using an admin-level user for those day-to-day tasks is _not_ following least privilege.
+
+Instead, you can create a role that you would assume to perform those day-to-day EKS tasks, and if you ever need admin permissions for one-off use cases or for emergency purposes, then you can always revert back.
+
+### Step 2: Start with AWS-managed policies and refine over time
+
+Figuring out what permissions are needed can be challenging and can take a lot of time. To help, you can start off using AWS-managed policies which are available in every AWS account. These are almost never going to give you least-privilege permissions since they're designed for broad use cases, but they can be a helpful starting point.
+
+Then, over time, you can transition to customer-managed policies that you customize from the AWS-managed policy by removing resources or actions, adding conditions, etc...
+
+A helpful way to do that is by using Access Analyzer to create policies based on access activity, [as explained below](#about-access-analyzer).
+
+### Step 3: Regularly audit and remove unused users, roles, permissions, policies, and credentials
+
+Drift happens over time, even to the best of us. Things change, resources get created and forgotten about, people leave, credentials get improperly rotated, and the list goes on. It will happen, and so it's important to reguarly set up audits where you go in and look for unused resources. In the case of least privilege, we're specifically looking for unused users, roles, permissions, and credentials (passwords or access keys).
+
+You can do that by looking at IAM's [:octicons-link-external-16: last accessed information](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data.html).
+
+If it's not being used, unless it's a resource created for emergency situations and you haven't had any emergencies (hurray!) then it probably highlights an area for improvement regarding least privilege.
+
 ## About Access Analyzer
 AWS IAM Access Analyzer is a security tool designed to help organizations identify and manage unintended resource access in their AWS environments. It enables users to analyze permissions granted through IAM policies, resource policies, and Access Control Lists (ACLs) to determine if they result in overly permissive or unintended access to AWS resources.
 
@@ -105,3 +131,7 @@ aws accessanalyzer check-no-new-access \
     _Requires CLI 2.13.39 or later_
 
     More info: [ :octicons-link-external-16: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/accessanalyzer/check-no-new-access.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/accessanalyzer/check-no-new-access.html)
+
+## Sources and more info
+
+- [:octicons-link-external-16: AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)
