@@ -109,7 +109,7 @@ nav:
           - 'S3 Enumeration': 'aws/security-assessments/pentesting-red-teaming/enumeration/s3-enumeration.md'
         - 'Privilege Escalation':
           - 'IAM PrivEsc': 'aws/security-assessments/pentesting-red-teaming/privilege-escalation/iam-privilege-escalation.md'
-      - 'Audits and Compliance': 'aws/security-assessments/audit-and-compliance.md'
+      - 'Audits and Compliance': 'aws/security-assessments/audits-and-compliance/audits-and-compliance.md'
     - 'Certifications': 
       - 'Certified Security Specialty': 'aws/certifications/certified-security-specialty.md'
     - 'Latest AWS Security News': 'aws/latest-news.md'
