@@ -4,7 +4,7 @@ My AWS access keys were exposed and are being exploited by a threat actor. What 
 ## Cheat Sheet
 <figure markdown>
   ![Image title](https://cybr.com/wp-content/uploads/2024/01/ir-playbook-iam_credentials_exposure-scaled.jpeg){ width="500" loading=lazy }
-    <figcaption>[:octicons-link-external-16: Hi-res download](https://cybr.com/courses/iam-privilege-escalation-labs/lessons/lab-introduction-to-secrets-manager-enumeration/)</figcaption>
+    <figcaption>[:octicons-link-external-16: Hi-res download](https://cybr.com/wp-content/uploads/2024/01/ir-playbook-iam_credentials_exposure-scaled.jpeg)</figcaption>
 </figure>
 
 
