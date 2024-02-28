@@ -2,6 +2,27 @@
 
 The concept of least privilege is about providing only the permissions required to perform a task. That's much easier said than done, however, and the journey to getting there typically starts off by providing more permissions than necessary (while being reasonable), and then refining over time. This page contains tips, tricks, and steps to help with that.
 
+## IAM Best Practices
+
+<figure markdown>
+  ![Image title](https://cybr.com/wp-content/uploads/2024/02/iam-best-practices-checklist-scaled.jpeg){ width="500" loading=lazy }
+    <figcaption>[:octicons-link-external-16: Hi-res download](https://cybr.com/wp-content/uploads/2024/02/iam-best-practices-checklist-scaled.jpeg)</figcaption>
+</figure>
+
+The above cheat sheet includes many best practices for AWS IAM, with more than half being related to achieving least privilege. Let's take a closer look:
+
+- **(6) Apply least-privilege permissions:** You can start with broader permissions (while being reasonable), and then refine over time using IAM Access Analyzer and manual reviews.
+- **(7) Get started with AWS managed policies and move toward least-privilege permissions:** AWS managed policies are almost always overly permissive, but they can be a good starting point to limit access based on job requirements/usage
+- **(8) Use IAM Access Analyzer to generate least-privilege policies based on access activity:** AWS IAM Access Analyzer is a tool that can help identify and manage unintended resource access in AWS environments. It can analyze permissions granted through IAM policies, resource policies, and ACLs, to determine if they result in overly permissive or unintended access to your AWS resources.
+- **(9) Regularly review and remove unused users, roles, permissions, policies, and credentials:** IAM provides last accessed information to identify users, roles, permissions, policies, and credentials that are no longer needed and should be removed or deactivated.
+- **(10) Use conditions in IAM policies to further restrict access:** Conditions let you specify when access should be granted for actions, resources, and principals. Refer to our cheat sheets: [:octicons-link-external-16: Create a least privilege S3 bucket policy](https://cybr.com/cloud-security/create-a-least-privilege-s3-bucket-policy/) and [:octicons-link-external-16: Anatomy of an AWS IAM Policy](https://cybr.com/cloud-security/anatomy-of-an-aws-iam-policy-cheat-sheet/) for more information and practical examples.
+- **(11) Verify public and cross-account access to resources with IAM Access Analyzer:** Another great use case for IAM Access Analyzer is that it can help analyze, identify, review, and monitor public or cross-account permissions for your resources.
+- **(12) Use IAM Access Analyzer to validate your IAM policies to ensure secure and functional permissions:** IAM Access Analyzer has two other awesome features: check-access-not-granted and check-no-new-access. The first is a command that enables checking newly created IAM policies against a deny list before deploying the policy to AWS. The second enables checking to see if new permissions are added to a policy before deploying to AWS. Think of it as a diff checker.
+- **(13) Establish permissions guardrails across multiple accounts:** Using multiple accounts isn’t just for large organizations. Account separation is the ultimate form of segmentation in AWS. Use AWS Organizations to manage accounts and use SCPs for permissions guardrails. SCPs are used in addition to identity-based or resource-based policies for users/roles/resources in the individual accounts.
+- **(14) Use permissions boundaries to delegate permissions management within an account:** Permissions boundaries are similar to other managed policies, except they restrict access by setting the maximum permissions allowed. They don’t grant access on their own. They can be used for both IAM users and roles, and the user/role can only perform actions allowed by both the identity-based policy and permissions boundary.
+
+Now let's go through and look at tips, tricks, and tools to achieve these best practices.
+
 ## Tips for getting to least-privilege permissions
 
 ### Step 1: Create roles for users to assume to perform specific tasks
