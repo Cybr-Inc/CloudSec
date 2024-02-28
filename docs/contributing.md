@@ -2,6 +2,8 @@ We're thrilled that you'd like to contribute to this project! This is a communit
 
 ## What can I contribute?
 
+Anything and everything related to cloud security or related topics. Got a tip for how to secure Azure Functions? Awesome! Got an open source project you use to help you write more secure Infrastructure as Code and want to share? Go for it. As long as it's related to cloud security and it's free to use, open a PR and we'll take a look!
+
 ## How to contribute
 
 Contriburing is simple:
