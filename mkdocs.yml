@@ -96,6 +96,7 @@ nav:
     - 'Monitoring & Logging':
       - 'AWS-Native Services': 'aws/monitoring-and-logging/aws-native-services.md'
       - 'Open Source Tools': 'aws/monitoring-and-logging/open-source-tools.md'
+      - 'Events to Monitor & Alert': 'aws/monitoring-and-logging/events-to-monitor-alert.md'
     - 'Threat Detection':
       - 'About Threat Detection': 'aws/threat-detection/threat-detection.md'
       - 'Guard Duty': 'aws/threat-detection/guard-duty.md'
