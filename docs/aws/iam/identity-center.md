@@ -1,3 +1,7 @@
+---
+icon: material/identifier
+---
+
 ## About IAM Identity Center
 Identity Center used to be known as AWS SSO, and this gives us a hint about what the service is and what it does (if you're familiar with the concept of Single Sign-On).
 

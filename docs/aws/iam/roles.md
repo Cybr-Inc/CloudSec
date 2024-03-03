@@ -1,3 +1,7 @@
+---
+icon: material/account-hard-hat
+---
+
 ## About Roles
 
 IAM Roles are similar to [users](/aws/iam/about-iam/#iam-users) in the sense that you can give permissions to roles by assigning them policies, but that's pretty much where the similarity ends.
@@ -114,6 +118,10 @@ Coming soon
 Coming soon
 
 [ :octicons-link-external-16: Helpful answer from StackOverflow](https://stackoverflow.com/questions/65970798/aws-service-role-vs-service-link-role)
+
+## Tools that make using IAM Roles easier
+
+- aws-vault
 
 ## Sources
 

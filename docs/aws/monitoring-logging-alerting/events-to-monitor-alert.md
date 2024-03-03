@@ -1,3 +1,7 @@
+---
+icon: material/bell-ring
+---
+
 # Events to monitor and alert
 
 ## Explanation

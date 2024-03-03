@@ -1,3 +1,7 @@
+---
+icon: material/dog-side
+---
+
 ## About GuardDuty
 
 Coming soon

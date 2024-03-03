@@ -1,3 +1,7 @@
+---
+icon: material/cloud-check-variant
+---
+
 ## Logging Services
 The primary security logging services in AWS are:
 

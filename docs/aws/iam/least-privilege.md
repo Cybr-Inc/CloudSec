@@ -1,3 +1,7 @@
+---
+icon: octicons/repo-locked-16
+---
+
 # About least privilege
 
 The concept of least privilege is about providing only the permissions required to perform a task. That's much easier said than done, however, and the journey to getting there typically starts off by providing more permissions than necessary (while being reasonable), and then refining over time. This page contains tips, tricks, and steps to help with that.

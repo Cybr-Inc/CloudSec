@@ -1,8 +1,12 @@
+---
+icon: material/information
+---
+
 # About IAM
 
 # IAM Users
 
-There are two types of users in AWS:
+There are two primary types of users in AWS (when it comes to managing AWS accounts):
 
 - IAM Users
 - [Identity Center users](/aws/iam/identity-center/)

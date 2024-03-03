@@ -1,3 +1,7 @@
+---
+icon: material/cloud-download
+---
+
 !!! warning "Important Note"
     We do not endorse these tools or guarantee that they work as advertised. Use at your own risk. If you experience issues with them, please let us know.
 

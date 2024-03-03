@@ -1,3 +1,7 @@
+---
+icon: material/list-box
+---
+
 ## AWS-native security services
 
 This page lists out all AWS-native security services. They are available to use through your AWS account to help secure your AWS resources and environments.

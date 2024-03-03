@@ -1,3 +1,7 @@
+---
+icon: material/form-textbox-password
+---
+
 # About this playbook
 My AWS access keys were exposed and are being exploited by a threat actor. What do I do?!?! Step 1: Don’t panic! There are playbooks that can help you in this situation.
 

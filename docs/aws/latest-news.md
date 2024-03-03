@@ -1,3 +1,8 @@
+---
+icon: material/newspaper-variant
+---
+
+
 Receive the latest AWS Security News and updates/changes 
 
 Receive the latest AWS security news and stay up-to-date on the latest changes for free with our sponsor AWS Security Newsletter.
