@@ -13,7 +13,8 @@ Sharing this wealth of knowledge for free has all been made possible by these sp
 </figure>
 
 <figure markdown>
-  ![Image title](https://unusd.cloud/images/logo.png){ width=300 loading=lazy }
-    <figcaption>[Cut your cloud costs >](https://unusd.cloud/)</figcaption>
+  ![Image title](/assets/sponsors/unusd-logo-full-social.png){ width=300 loading=lazy }
+    <figcaption>[ :octicons-link-external-16: Cut your cloud costs](https://unusd.cloud/)</figcaption>
 </figure>
+
 
