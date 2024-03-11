@@ -102,11 +102,213 @@ Coming soon
 ### Better approach
 
 ### Best approach
-For the best approach, check out [ :octicons-link-external-16: aws-vault](/aws/iam/open-source-tools/) in our list of open source tools.
+For the best approach, check out our list of open source tools below.
 
-## Trust relationship policy documents aka trust policies (and how they're different from permissions policies)
+## Trust relationship policy documents aka trust policies
 
-Coming soon
+Whenever you create a role through the AWS console, the first option is to select a trusted entity. You can select between:
+
+- AWS service
+- AWS account
+- Web identity
+- SAML 2.0 Federation
+- Custom trust policy
+
+Let's talk about what these options are and what they mean, and we'll break down each of these options one-by-one.
+
+### What are trusted entities?
+
+The way that we set who or what can assume our roles when we configure them is by writing trust policies. Trust policies are [resource-based policies](/aws/iam/about-iam/#resource-policies) that are attached directly to a role, and they dictate who we trust to assume the role. 
+
+Roles can be assumed by:
+
+- IAM Users
+- Identity Center Users
+- Other Roles
+- AWS Accounts (well, identities/resources within those accounts)
+- AWS Services
+
+Here's an example of a trust policy:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::111111111111:root"
+            },
+            "Action": "sts:AssumeRole",
+            "Condition": {
+                "Bool": {
+                    "aws:MultiFactorAuthPresent": "true"
+                }
+            }
+        }
+    ]
+}
+```
+
+We have:
+
+- An `"Effect": "Allow"`
+- A `"Principal": { "AWS": "arn..."}`
+- An `"Action": "sts:AssumeRole"`
+- With a `Condition` checking for whether MFA was used to authenticate or not
+
+The `Principal` in these trust policies is what tells AWS *who* or *what* can assume this role. In the case of the above example, we have an `AWS Account ID` ARN of `111111111111` and it also has `:root` at the end. 
+
+This policy is telling AWS that only resources from that account can assume this role, and only if they used MFA to authenticate.
+
+`:root` here doesn't mean that you have to be the root user of account `111...`, it instead means all resources in that account. 
+
+### Changing & restricting the principal
+
+We ideally would want to refine this a little bit more and only allow certain users or roles to be able to assume this role instead of entire accounts. To do that, we would update the principal. Let’s see how.
+
+To change it from `:root` to your user, you can do that by updating the principal ARN:
+
+```json
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::111111111111:user/christophe-demo"
+			},
+			"Action": "sts:AssumeRole",
+			"Condition": {
+				"Bool": {
+					"aws:MultiFactorAuthPresent": "true"
+				}
+			}
+		}
+	]
+}
+```
+
+For a single user, you can add `:user/username`. If you had multiple users you wanted to add, you would add them as an array like this:
+
+```json
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": [
+                    "arn:aws:iam::111111111111:user/christophe-demo", "arn:aws:iam::111111111111:user/username-2"
+                ]
+			},
+			"Action": "sts:AssumeRole",
+			"Condition": {
+				"Bool": {
+					"aws:MultiFactorAuthPresent": "true"
+				}
+			}
+		}
+	]
+}
+```
+
+Or, if you wanted to grant access to assume this role from another role — typically because the role is from another account - then you would replace the ARN to this:
+
+```json
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::111111111111:role/admin"
+			},
+			"Action": "sts:AssumeRole",
+			"Condition": {
+				"Bool": {
+					"aws:MultiFactorAuthPresent": "true"
+				}
+			}
+		}
+	]
+}
+```
+
+With a `:role/roleName`.
+
+### How to create trust policies
+
+#### In the AWS console
+
+In the AWS console, whenever you go to create a role (IAM -> Roles -> Create a role), the first options you select will auto generate a trust policy for you, or you can always select the option to create a custom policy.
+
+#### With the CLI
+
+You set the trust role policy when you create the role through the `--assume-role-policy-document <value>` option:
+
+```
+aws iam create-role --role-name <value> --assume-role-policy-document <value>
+```
+
+[ :octicons-link-external-16: More info about the `create-role` command](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/create-role.html)
+
+### Trust policies are not permissions policies
+
+A role needs to have both a trust policy _and_ at least 1 permissions policy to be useable. 
+
+The trust policy dictates who/what can assume the role.
+
+The permissions policy dictates what the assumer has access to.
+
+### AWS Service
+
+For the `Trusted entity type`, leave it to the default of `AWS service`. As we can see from the description and from the bottom section that’s labeled `Use case`, we can select an AWS service like `EC2` or `Lambda`, and it will change our available use cases.
+
+Whenever you select this option, you are creating what’s called an *AWS Service Role*.
+
+A service role is a role that an AWS service can assume to perform actions and access resources. 
+
+We’ll come back to this trusted entity type in the next lesson when we create our first role for an AWS service. 
+
+### Web Identity
+
+For now, let’s skip over `AWS account` since we’re already familiar with that one, and let’s click on `Web identity`.
+
+This option allows users federated by an external web identity provider to assume the role and perform actions in this account. 
+
+By selecting it, we get access to a dropdown where we can `Choose a provider`.
+
+We have options for:
+
+- Login with Amazon
+- Amazon Cognito
+- Facebook
+- Google
+
+So for example, if someone were to log in through Amazon Cognito, they can assume this role to — say, access Amazon S3 images through your mobile application — just to name an example.
+
+### SAML 2.0 federation
+
+The next option we have is SAML 2.0 federation. SAML is a standard that allows an identity provider to authenticate users and pass identity and security information to a service provider. That’s a fancy way of saying that with SAML, you can enable single sign-on for your users with SAML-enabled apps and services.  
+
+This is a much larger topic that we won’t cover in this course, but this would be the option to select if you are creating a role for something related to SAML 2.0 federation.
+
+### Custom trust policy
+
+Finally we have `Custom trust policy` where we get an editor to manually configure or write our policy. This is an option if you have an edge case that’s not satisfied by the other options, or if you just know what you need and want and it would be faster for you to handwrite it then go through the provided options.
+
+The other options are really just the AWS console user interface making it easier for you to configure your trust policy, but we could do all of this by hand, of course, as we can see with this option.
+
+Also, if you were creating a role via the AWS CLI, API, or using Infrastructure as Code, you would have to pass in a custom trust policy like this.
+
+
+## Roles best practices
+
+!!! success "Roles best practices"
+
+    - Require MFA in your trust policy - this requires that you successfully authenticate through MFA before you can assume a role
+    - Use an external ID if the role is going to be used by a third party
 
 ## AWS service roles
 
@@ -121,7 +323,8 @@ Coming soon
 
 ## Tools that make using IAM Roles easier
 
-- aws-vault
+- [ :octicons-link-external-16: aws-vault](https://github.com/99designs/aws-vault) - A vault for securely storing and accessing AWS credentials in development environments
+- [ :octicons-link-external-16: CommonFate's Granted](https://docs.commonfate.io/granted/getting-started) - Command line interface (CLI) tool which simplifies access to cloud roles and allows multiple cloud accounts to be opened in your web browser simultaneously. The goals of Granted are:
 
 ## Sources
 
