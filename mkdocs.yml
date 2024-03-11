@@ -14,6 +14,7 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
+    - navigation.expand
     - toc.follow
     - navigation.top
     - search.suggest
@@ -102,6 +103,7 @@ nav:
       - 'About Threat Detection': 'aws/threat-detection/threat-detection.md'
       - 'Guard Duty': 'aws/threat-detection/guard-duty.md'
       - 'Threat Databases': 'aws/threat-detection/threat-databases.md'
+      - 'Open Source Tools': 'aws/threat-detection/open-source-tools.md'
     - 'Security Assessments':
       - 'Pentesting & Red Teaming': 
         - 'Open Source Tools': 'aws/security-assessments/pentesting-red-teaming/open-source-tools.md'
@@ -116,7 +118,10 @@ nav:
       - 'Certified Security Specialty': 'aws/certifications/certified-security-specialty.md'
     - 'Latest AWS Security News': 'aws/latest-news.md'
     - 'Sources': 'aws/sources.md'
-  - 'Azure Security': azure/about-azure.md
+  - 'Azure Security':
+    - 'Azure Security': 'azure/about-azure.md'
+    - 'Threat Detection':
+      - 'Open Source Tools': 'azure/threat-detection/open-source-tools.md'
   - 'Google Cloud Security': google-cloud/about-google-cloud.md
   - 'Career Paths': 'career-paths/cloudsec-career-paths.md'
   - About:
