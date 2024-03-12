@@ -1,1 +1,1 @@
-We are looking for contributors for this section.
+We are looking for [contributors](/contributing/) for this section.
