@@ -1,3 +1,8 @@
+---
+title: CloudSec Repo
+description: "Public repository for all things cloud security: AWS, Azure, Google Cloud, and related topics."
+---
+
 # Welcome to CloudSec.Cybr
 
 ![image](/assets/cloudsec.cybr-logo-300px.jpg){ align=left }
