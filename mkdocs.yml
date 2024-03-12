@@ -118,6 +118,7 @@ nav:
     - 'Certifications': 
       - 'Certified Security Specialty': 'aws/certifications/certified-security-specialty.md'
     - 'Latest AWS Security News': 'aws/latest-news.md'
+    - 'Communities': 'aws/communities.md'
     - 'Sources': 'aws/sources.md'
   - 'Azure Security':
     - 'Azure Security': 'azure/about-azure.md'
