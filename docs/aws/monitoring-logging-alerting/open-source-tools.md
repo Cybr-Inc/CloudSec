@@ -2,8 +2,8 @@
 icon: material/cloud-download
 ---
 
-!!! warning "Important Note"
-    We do not endorse these tools or guarantee that they work as advertised. Use at your own risk. If you experience issues with them, please let us know.
+!!! warning "General Disclaimer"
+    While we do our best to only post reputable tools, we cannot feasibly inspect them all, and so we can't guarantee that they work as advertised. Use at your own risk. If you experience issues with them, please let us know.
 
 - [ :octicons-link-external-16: AWS Security Survival Kit (ASSK)](https://github.com/zoph-io/aws-security-survival-kit) - Sets up a basic proactive monitoring and alerting environment on common suspicious activities in your AWS Account.
 - [ :octicons-link-external-16: Trailscraper](https://github.com/flosell/trailscraper) - A command-line tool to get valuable information out of AWS CloudTrail
