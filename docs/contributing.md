@@ -15,6 +15,40 @@ Contriburing is simple:
 
 This project uses MkDocs Material theme and has multiple extensions/plugins installed. Refer to their documentation on [ :octicons-link-external-16: plugins](https://squidfunk.github.io/mkdocs-material/plugins/) and [ :octicons-link-external-16: reference](https://squidfunk.github.io/mkdocs-material/reference/) to learn how to use it, and refer to our [ :octicons-link-external-16: config file](https://github.com/Cybr-Inc/CloudSec/blob/main/mkdocs.yml) to see what's available. 
 
+## How to use Mkdocs locally
+
+Before submitting a change, it's a good idea to make sure it works and looks right. A great way to do that is to run this on your local computer. Since this project uses MkDocs with Material Theme, it should be fairly easy to do as long as you have Python installed (which more modern devices should). But even if not, you can use Docker as an alternative.
+
+Below are the steps you can take, and you can [ :octicons-link-external-16: reference instructions here](https://squidfunk.github.io/mkdocs-material/getting-started/).
+
+#### Install MkDocs Material Theme
+
+```
+pip install mkdocs-material
+```
+
+This should also install MkDocs and other dependencies.
+
+If you don't have pip or don't have Python installed, [ :octicons-link-external-16: you can use Docker](https://squidfunk.github.io/mkdocs-material/getting-started/#with-docker).
+
+#### Verify it worked
+
+```
+mkdocs --version
+```
+
+#### Run MkDocs
+
+Download this repository if you haven't already, and then navigate to the repository directory so you can enter:
+
+```
+mkdocs serve
+```
+
+If installed properly, it should start a live preview server at something like `http://127.0.0.1:8000` which you can open up in your browser.
+
+It will then update the site as you make changes locally!
+
 ## How to display links
 
 If your contribution includes links, please follow these guidelines:
