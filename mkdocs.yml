@@ -1,5 +1,6 @@
 site_name: CloudSec.Cybr
 theme:
+  logo: assets/cloudsec.cybr-logo-300px.jpg
   name: material
   palette:
     scheme: slate
