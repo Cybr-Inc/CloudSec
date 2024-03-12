@@ -2,6 +2,8 @@
 icon: material/identifier
 ---
 
+_Note: A lot more content is coming soon about Identity Center, because it's an important but often misunderstood topic, especially for those just getting started with this service._
+
 ## About IAM Identity Center
 [ :octicons-link-external-16: Identity Center](https://aws.amazon.com/iam/identity-center/) used to be known as AWS SSO, and this gives us a hint about what the service is and what it does (if you're familiar with the concept of Single Sign-On).
 
