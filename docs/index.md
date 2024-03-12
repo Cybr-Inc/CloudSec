@@ -1,9 +1,14 @@
 # Welcome to CloudSec.Cybr
 
+![image](/assets/cloudsec.cybr-logo-300px.jpg){ align=left }
 Public repository for all things cloud security. We welcome contributions for anything and everything related to cloud security: AWS/Azure/Google Cloud, and related topics such as cloud pentesting, secrets, IaC, etc... 
+
 
 **We are looking to mention and promote open source tools, projects, and learning resources**. If you have a commercial product you'd like to promote, please [ :octicons-link-external-16: contact us](https://cybr.com/contact)  for sponsorship opportunities.
 
+<br />
+
+---
 
 <div class="grid cards" markdown>
 
@@ -25,7 +30,7 @@ Public repository for all things cloud security. We welcome contributions for an
 
 </div>
 
-## AWS Security
+## <span class="aws"> AWS Security </span>
 
 <div class="grid cards" markdown>
 
@@ -39,7 +44,7 @@ Public repository for all things cloud security. We welcome contributions for an
 
 </div>
 
-## Azure Security
+## <span class="azure"> Azure Security </span>
 
 We are looking for contributors.
 
@@ -55,7 +60,7 @@ We are looking for contributors.
 
 </div>
 
-## Google Cloud Security
+## <span class="google-cloud"> Google Cloud Security <span>
 
 We are looking for contributors.
 
