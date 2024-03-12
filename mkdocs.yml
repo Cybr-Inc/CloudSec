@@ -125,7 +125,10 @@ nav:
     - 'Azure Security': 'azure/about-azure.md'
     - 'Threat Detection':
       - 'Open Source Tools': 'azure/threat-detection/open-source-tools.md'
-  - 'Google Cloud Security': google-cloud/about-google-cloud.md
+  - 'Google Cloud Security':
+    - 'Google Cloud Security': 'google-cloud/about-google-cloud.md'
+    - 'Security Assessments':
+      - 'Audits and Compliance': 'google-cloud/security-assessments/audits-and-compliance/audits-and-compliance.md'
   - 'Career Paths': 'career-paths/cloudsec-career-paths.md'
   - About:
     - 'About': 'about.md'
