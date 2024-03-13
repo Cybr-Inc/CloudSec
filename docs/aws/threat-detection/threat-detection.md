@@ -2,11 +2,13 @@
 icon: material/alarm-light
 ---
 
-Primary AWS-native threat detection services:
+## AWS-native threat detection services
 
-- GuardDuty - 
-- Detective - 
-- Security Hub - continuous monitoring against benchmarks configuration checks and best practices
+- [GuardDuty](/aws/threat-detection/guard-duty/) - AWS threat detection service that monitors your environment(s) for unusual and potentially malicious activity. It receives data from many different AWS services.
+- [Detective](/aws/threat-detection/detective/) - Investigate security events visually
+- Security Hub - Cloud security posture management (CSPM) for continuous monitoring against benchmarks configuration checks and best practices
+
+## What events might indicate a threat actor has infiltrated your environment(s)?
 
 A great way to understand what to look for with threat detection is to [study real-world incident reports](/aws/incident-response/real-world-case-studies/), because they will often share Indicators of Compromise (IoCs).
 
