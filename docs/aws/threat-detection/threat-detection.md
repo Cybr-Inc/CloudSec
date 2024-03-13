@@ -2,6 +2,14 @@
 icon: material/alarm-light
 ---
 
+## AWS-native threat detection services
+
+- [GuardDuty](/aws/threat-detection/guard-duty/) - AWS threat detection service that monitors your environment(s) for unusual and potentially malicious activity. It receives data from many different AWS services.
+- [Detective](/aws/threat-detection/detective/) - Investigate security events visually
+- Security Hub - Cloud security posture management (CSPM) for continuous monitoring against benchmarks configuration checks and best practices
+
+## What events might indicate a threat actor has infiltrated your environment(s)?
+
 A great way to understand what to look for with threat detection is to [study real-world incident reports](/aws/incident-response/real-world-case-studies/), because they will often share Indicators of Compromise (IoCs).
 
 While this is not a comprehensive list, below is a list of some commonly used API actions during incidents by threat actors. Of course, just because one of these actions is taken in your account doesn't automatically mean you've been breached. These actions can all be legitimately used as well, otherwise they wouldn't be part of the AWS API. The tricky part is identifying when they're legitimately used and when they're not.
