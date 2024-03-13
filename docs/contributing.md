@@ -15,13 +15,26 @@ Contriburing is simple:
 
 This project uses MkDocs Material theme and has multiple extensions/plugins installed. Refer to their documentation on [ :octicons-link-external-16: plugins](https://squidfunk.github.io/mkdocs-material/plugins/) and [ :octicons-link-external-16: reference](https://squidfunk.github.io/mkdocs-material/reference/) to learn how to use it, and refer to our [ :octicons-link-external-16: config file](https://github.com/Cybr-Inc/CloudSec/blob/main/mkdocs.yml) to see what's available. 
 
-## How to use Mkdocs locally
+## How to edit this project locally
 
-Before submitting a change, it's a good idea to make sure it works and looks right. A great way to do that is to run this on your local computer. Since this project uses MkDocs with Material Theme, it should be fairly easy to do as long as you have Python installed (which more modern devices should). But even if not, you can use Docker as an alternative.
+Before submitting a change, it's a good idea to make sure it works and looks right. A great way to do that is to run this on your local computer. Since this project uses MkDocs with Material Theme, it should be fairly easy to do as long as you have Python or Docker installed. Docker might end up being the easier and cleaner approach if you already have it installed.
 
-Below are the steps you can take, and you can [ :octicons-link-external-16: reference instructions here](https://squidfunk.github.io/mkdocs-material/getting-started/).
+If you need additional help, please reach out or you can [ :octicons-link-external-16: reference instructions here](https://squidfunk.github.io/mkdocs-material/getting-started/).
 
-#### Install MkDocs Material Theme
+
+### Run this project locally, the Docker version
+
+After downloading the project locally, navigate to the directory and run:
+
+```
+docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material
+```
+
+If this works successfully, you should be able to open the project in a browser window.
+
+If that doesn't work or if you prefer to use Python instead, refer to the next steps below.
+
+### Run this project locally, the Python version
 
 ```
 pip install mkdocs-material
@@ -29,7 +42,7 @@ pip install mkdocs-material
 
 This should also install MkDocs and other dependencies.
 
-If you don't have pip or don't have Python installed, [ :octicons-link-external-16: you can use Docker](https://squidfunk.github.io/mkdocs-material/getting-started/#with-docker).
+If you don't have pip or don't have Python installed, you will need to do that first. You may also need to update your Python to version 3.8 or higher.
 
 #### Verify it worked
 
@@ -37,9 +50,29 @@ If you don't have pip or don't have Python installed, [ :octicons-link-external-
 mkdocs --version
 ```
 
+#### Install dependencies
+
+While this project has very few dependencies, if you don't install them, it won't start properly.
+
+Start by creating a python virtual environment (complete these steps in the project directory):
+
+```
+python3 -m venv .venv
+```
+
+```
+source .venv/bin/activate
+```
+
+Then install requirements:
+
+```
+python -m pip install -r requirements.txt
+```
+
 #### Run MkDocs
 
-Download this repository if you haven't already, and then navigate to the repository directory so you can enter:
+With the above steps completed, you're ready to run the project locally!
 
 ```
 mkdocs serve
