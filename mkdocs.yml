@@ -105,6 +105,7 @@ nav:
       - 'GuardDuty': 'aws/threat-detection/guard-duty.md'
       - 'Detective': 'aws/threat-detection/detective.md'
       - 'Threat Databases': 'aws/threat-detection/threat-databases.md'
+      - 'Simulate Attacks': 'aws/threat-detection/simulate-attacks.md'
       - 'Open Source Tools': 'aws/threat-detection/open-source-tools.md'
     - 'Security Assessments':
       - 'Pentesting & Red Teaming': 
