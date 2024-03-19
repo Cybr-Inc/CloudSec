@@ -31,7 +31,7 @@ Public repository for all things cloud security. We welcome contributions for an
 
     By using this repository and website, you agree to abide by the license and ToS
 
-    [:octicons-arrow-right-24: License](https://github.com/christophelimpalair/CloudSec?tab=License-1-ov-file) [:octicons-arrow-right-24: ToS](/#disclaimer)
+    [:octicons-arrow-right-24: License](https://github.com/Cybr-Inc/CloudSec?tab=License-1-ov-file) [:octicons-arrow-right-24: ToS](/#disclaimer)
 
 </div>
 
