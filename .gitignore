@@ -12,3 +12,7 @@
 .DS_Store
 **/.DS_Store
 .cache
+.venv
+.venv/*
+.cache
+.cache/*
