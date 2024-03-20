@@ -6,6 +6,13 @@ icon: fontawesome/solid/explosion
 
 These tools and this approach is helpful in testing your defenses to make sure they're detecting what you expect, and that they're able to detect common AWS cloud attacks.
 
+## Cheat Sheet
+<figure markdown>
+  ![Image title](https://cybr.com/wp-content/uploads/2024/03/Cloud-Attack-Simulations-scaled.jpeg){ width="500" loading=lazy }
+    <figcaption>[ :octicons-link-external-16: Hi-res download](https://cybr.com/wp-content/uploads/2024/03/Cloud-Attack-Simulations-scaled.jpeg)</figcaption>
+</figure>
+
+
 - [ :octicons-link-external-16: Stratus Red Team by DataDog](https://github.com/DataDog/stratus-red-team/tree/main) - Granular, Actionable Adversary Emulation for the Cloud
 - [ :octicons-link-external-16: Leonidas by F-Secure](https://github.com/WithSecureLabs/leonidas) - Automated Attack Simulation in the Cloud, complete with detection use cases.
 - [ :octicons-link-external-16: Pacu by Rhino Security Labs](https://github.com/RhinoSecurityLabs/pacu) - The AWS exploitation framework, designed for testing the security of Amazon Web Services environments.
