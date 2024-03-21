@@ -131,6 +131,7 @@ nav:
     - 'Threat Detection':
       - 'Open Source Tools': 'azure/threat-detection/open-source-tools.md'
       - 'Simulate Attacks': 'azure/threat-detection/simulate-attacks.md'
+      - 'Threat Databases': 'azure/threat-detection/threat-databases.md'
   - 'Google Cloud Security':
     - 'Google Cloud Security': 'google-cloud/about-google-cloud.md'
     - 'Security Assessments':
