@@ -8,3 +8,13 @@ icon: material/cloud-download
 - [ :octicons-link-external-16: AzureInspect](https://github.com/soteria-security/AzureInspect) - AzureInspect is an Open Source Security tool used to assess the Microsoft Azure configuration of an organization's Azure Subscriptions through a series of modular PowerShell scripts. AzureInspect checks for security best practices surrounding Azure VMs, RBAC Roles and Assignments, Subscription Policies, and more. AzureInspect generates a report in HTML format with actionable, step-by-step remediation actions, example PowerShell commands, and reference links to supporting documentation.
 
 - [ :octicons-link-external-16: 365Inspect](https://github.com/soteria-security/365Inspect) - 365Inspect Community Edition is an Open Source Security tool used to assess the security of a Microsoft 365 tenant through a series of modular PowerShell scripts. 365Inspect checks for security best practices surrounding users, roles, applications, email, sharing settings, and more. 365Inspect generates a report in HTML, CSV, XML, or JSON formats with actionable, step-by-step remediation actions, example PowerShell commands, and reference links to supporting documentation.
+
+- [ :octicons-link-external-16: AzureGoat](https://github.com/ine-labs/AzureGoat) - AzureGoat is a vulnerable by design infrastructure on Azure featuring the latest released OWASP Top 10 web application security risks (2021) and other misconfiguration based on services such as App Functions, CosmosDB, Storage Accounts, Automation and Identities. AzureGoat mimics real-world infrastructure but with added vulnerabilities. It features multiple escalation paths and is focused on a black-box approach.
+
+- [ :octicons-link-external-16: ROADtools](https://github.com/dirkjanm/ROADtools) - Rogue Office 365 and Azure Active Directory Tools - ROADtools is a framework to interact with Azure AD. It consists of a library (roadlib) with common components, the ROADrecon Azure AD exploration tool and the ROADtools Token eXchange (roadtx) tool.
+
+- [ :octicons-link-external-16: MicroBurst](https://github.com/NetSPI/MicroBurst) - MicroBurst includes functions and scripts that support Azure Services discovery, weak configuration auditing, and post exploitation actions such as credential dumping. It is intended to be used during penetration tests where Azure is in use.tool.
+
+- [ :octicons-link-external-16: AzureHound](https://github.com/BloodHoundAD/AzureHound) - The BloodHound data collector for Microsoft Azure. Use this to analyze attack paths in Azure. Part of the popular BloodhHound framework. More details can be found in this blog: https://posts.specterops.io/introducing-bloodhound-4-0-the-azure-update-9b2b26c5e350
+
+
