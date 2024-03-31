@@ -128,6 +128,8 @@ nav:
     - 'Azure Security': 'azure/about-azure.md'
     - 'Security Assessments':
       - 'Open Source Tools': 'azure/security-assessments/open-source-tools.md'
+      - 'Pentesting & Red Teaming':
+        - 'Open Source Tools': 'azure/security-assessments/pentesting-red-teaming/open-source-tools.md'
     - 'Threat Detection':
       - 'Open Source Tools': 'azure/threat-detection/open-source-tools.md'
       - 'Simulate Attacks': 'azure/threat-detection/simulate-attacks.md'
