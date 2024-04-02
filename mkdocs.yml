@@ -119,6 +119,8 @@ nav:
           - 'IAM PrivEsc': 'aws/security-assessments/pentesting-red-teaming/privilege-escalation/iam-privilege-escalation.md'
       - 'Audits and Compliance': 'aws/security-assessments/audits-and-compliance/audits-and-compliance.md'
       - 'Open Source Tools': 'aws/security-assessments/open-source-tools.md'
+    - 'Network & App Protection':
+      - 'Open Source Tools': 'aws/network-and-application-protection/open-source-tools.md'
     - 'Certifications': 
       - 'Certified Security Specialty': 'aws/certifications/certified-security-specialty.md'
     - 'Latest AWS Security News': 'aws/latest-news.md'
