@@ -55,6 +55,6 @@ The above steps are easy wins, but this next step is where it gets more challeng
 
 Start with removing unused long-term access keys and preventing creation of new keys first, and then go through this section. Keep in mind that some use cases may still require IAM Users, so some organizations may not be able to completely eliminate them. However, they need to become the exception, not the norm.
 
-??? example "Example of when it's still acceptable to have IAM Users"
+??? example "Example of when you may still want to have IAM Users"
 
     If you are using Identity Center with with or without an external identity provider, if you experience an outage of that external provider or Identity Center, or if for whatever reason you lose access to either of those, you will be in a very bad spot because you won't be able to access your AWS environments and resources at a time whe you might need it the most. In that case, it's acceptable to have what AWS refers to as a "Break Glass" IAM User that has access to a `SecurityBreakGlass` role that can access all of your AWS accounts with admin-level permissions for incident response. This is only to be used in emergencies.
