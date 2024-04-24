@@ -263,13 +263,30 @@ The permissions policy dictates what the assumer has access to.
 
 ### AWS Service
 
-For the `Trusted entity type`, leave it to the default of `AWS service`. As we can see from the description and from the bottom section that’s labeled `Use case`, we can select an AWS service like `EC2` or `Lambda`, and it will change our available use cases.
+This trusted entity type let's you select an AWS service like `EC2` or `Lambda`, for example, and it will change our available use cases.
 
-Whenever you select this option, you are creating what’s called an *AWS Service Role*.
+Whenever you select this option, you are creating what’s called an *AWS Service Role*. A service role is a role that an AWS service can assume to perform actions and access resources. 
 
-A service role is a role that an AWS service can assume to perform actions and access resources. 
+For example, if you want EC2 instances to be able to access data stored in Amazon S3, you would want a trust policy that enables those instances to assume the role, and then you would want to add one or more permissions policies that grant access to the correct data in S3. The trust policy could look something like this:
 
-We’ll come back to this trusted entity type in the next lesson when we create our first role for an AWS service. 
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sts:AssumeRole"
+            ],
+            "Principal": {
+                "Service": [
+                    "ec2.amazonaws.com"
+                ]
+            }
+        }
+    ]
+}
+```
 
 ### Web Identity
 
