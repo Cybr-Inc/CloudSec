@@ -94,13 +94,4 @@ Thanks to our sponsors for making this project possible!
     <figcaption>[ :octicons-link-external-16: Cybr AWS Security Training](https://cybr.com)</figcaption>
 </figure>
 
-<figure markdown>
-  ![Image title](/assets/sponsors/aws-security-newsletter.jpg){ width=300 loading=lazy }
-    <figcaption>[ :octicons-link-external-16: AWS Security Digest Newsletter](https://awssecuritydigest.com/)</figcaption>
-</figure>
-
-<figure markdown>
-  ![Image title](/assets/sponsors/unusd-logo-full-social.png){ width=300 loading=lazy }
-    <figcaption>[ :octicons-link-external-16: Cut your cloud costs](https://unusd.cloud/)</figcaption>
-</figure>
-
+*If you'd like to sponsor the CloudSec.Cybr project, [ :octicons-link-external-16: please contact us](https://cybr.com/contact).*
