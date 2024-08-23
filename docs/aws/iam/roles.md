@@ -329,12 +329,42 @@ Also, if you were creating a role via the AWS CLI, API, or using Infrastructure 
 
 ## AWS service roles
 
-Coming soon
+Service roles are roles that can be assumed by a service to access other services or resources in AWS.
+
+As an example, the trust policy for a service role might look like this:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": [
+                    "codedeploy.amazonaws.com"
+                ]
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
+```
+
+This gives the service `codedeploy.amazonaws.com` the ability to assume the role.
 
 
 ## AWS service-linked roles
 
-Coming soon
+_Service-linked_ roles are directly linked to an AWS service. That service can assume the role to perform actions, similar to how services or people can assume _service_ roles. The main difference is that _service-linked_ roles are *owned* by the service that they belong do. You can view them in your account, but you cannot edit them or their permissions, even if you are an administrator. To delete them, you would have to delete the related services since those services wouldn't function properly without their role.
+
+So why would we want that? When does this make sense, and why not just use service roles instead since we can manage those and we have more control over them?
+
+### Why use service-linked roles?
+
+Service-linked roles are predefined by the service and they include all of the required permissions for that service to be able to call other AWS services, which helps make setting up that service easier because you don’t have to think about the required permissions. 
+
+The linked service defines the permissions of its service-linked roles, and usually, only that service can assume that role. Service-linked roles can't be assumed or attached to any other IAM entity.
 
 [ :octicons-link-external-16: Helpful answer from StackOverflow](https://stackoverflow.com/questions/65970798/aws-service-role-vs-service-link-role)
 
