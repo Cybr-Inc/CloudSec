@@ -20,7 +20,7 @@ Once set up, your users can use an AWS access portal URL to access their assigne
 
 Once you successfully authenticate, you would be presented with the AWS Access Portal that would look like this:
 
-![Example of AWS Access Portal](../../../assets/graphics/aws-access-portal.jpg)
+![Example of AWS Access Portal](../../assets/graphics/aws-access-portal.jpg)
 
 This is much more convenient than logging in as an IAM User, then having to figure out which roles to assume in which accounts. That's not the only benefit, though! Read on for more.
 
