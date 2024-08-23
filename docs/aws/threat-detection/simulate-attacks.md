@@ -14,6 +14,7 @@ These tools and this approach is helpful in testing your defenses to make sure t
 
 
 - [ :octicons-link-external-16: Stratus Red Team by DataDog](https://github.com/DataDog/stratus-red-team/tree/main) - Granular, Actionable Adversary Emulation for the Cloud
+- [ :octicons-link-external-16: Grimoire](https://github.com/dataDog/grimoire) - Generate datasets of cloud audit logs for common attacks
 - [ :octicons-link-external-16: Leonidas by F-Secure](https://github.com/WithSecureLabs/leonidas) - Automated Attack Simulation in the Cloud, complete with detection use cases.
 - [ :octicons-link-external-16: Pacu by Rhino Security Labs](https://github.com/RhinoSecurityLabs/pacu) - The AWS exploitation framework, designed for testing the security of Amazon Web Services environments.
 - [ :octicons-link-external-16: CloudGoat by Rhino Security Labs](https://github.com/RhinoSecurityLabs/cloudgoat) - CloudGoat is Rhino Security Labs' "Vulnerable by Design" AWS deployment tool
