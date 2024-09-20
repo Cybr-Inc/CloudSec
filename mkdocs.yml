@@ -89,6 +89,7 @@ nav:
       - 'Identity Center': 'aws/iam/identity-center.md'
       - 'Roles': 'aws/iam/roles.md'
       - 'Achieve Least Privilege': 'aws/iam/least-privilege.md'
+      - 'IAM Permissions Boundaries': 'aws/iam/permissions-boundaries.md'
       - 'Getting rid of access keys': 'aws/iam/get-rid-of-access-keys.md'
       - 'Open Source Tools': 'aws/iam/open-source-tools.md'
     - 'Incident Response':
